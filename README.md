@@ -2,12 +2,12 @@
 
 Welcome to **Code with JavaScript**! This repository is dedicated to my daily JavaScript programming practice,
 where I solve various problems, explore concepts, and improve my coding skills.
-
+<!--
 ### 📌 About
 - This repository contains JavaScript programs covering different topics like data structures, algorithms, functional programming, ES6+, and more.
 - The goal is to practice consistently and document my learning journey.
 - Each program will be well-structured and include comments for better understanding.
-<!--
+
 ### 📂 Repository Structure
 ```
 code-with-javascript/
