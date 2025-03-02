@@ -46,7 +46,7 @@ code-with-javascript/
 This repository is mainly for personal learning, but feel free to open issues or suggest improvements.
 
 ### 📧 Contact
-For any queries or discussions, feel free to reach out via GitHub or connect on [LinkedIn](#www.linkedin.com/in/lalitpatil8901)
+For any queries or discussions, feel free to reach out via GitHub or connect on [LinkedIn](https://www.linkedin.com/in/lalitpatil8901/)
 
 ---
 Happy Coding! 🚀
