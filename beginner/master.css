@@ -1,0 +1,25 @@
+/*This css file common for some HTML/JS program */
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+/* main box  */
+.main-container {
+  /* border: 1px solid red; */
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* center box */
+.center-small-box {
+  /* border: 1px solid green; */
+  width: 400px;
+  height:auto;
+  margin: 0px auto;
+}
