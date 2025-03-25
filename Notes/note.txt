@@ -1,0 +1,239 @@
+
+JS is a loosely typed language
+let abc;
+abc = "Hello World!";
+document.write(abc);
+---
+let abc;
+abc = 5;
+document.write(abc);
+---
+let abc;
+abc = 5;
+document.write(abc);
+abc = "Hello World!";
+document.write(abc);
+
+We cannnot declare the same variable twice in the code.
+
+let ->
+* It has Block level scope.
+* Same Variable cannot be declared twice.
+* The variable needs to be initialized.
+
+if(some_condition){
+    var abc = "Hello World!";
+}
+document.write(abc);
+
+-----
+
+var -> 
+* It has a fucnction or global scope.
+* Same Variable can be declared twice.
+* No need to initialize the variable.
+
+if(some_condition) {
+    let abc = "Hello World";
+}
+document.write(abc);
+
+-----
+
+const ->
+* It is used to declare a constant variable whose value cannot be changed.
+
+======
+Naming Conventions
+------------------
+
+* Contain alphanumeric characters, underscore(_), and dollar ($). 
+  Example: _abc, $abc, abc123, etc.
+* Cannot start with a number. Example: 123abc, 123_abc,etc.
+* Cannot contain special characters like !,-,#,etc.
+* Case sensitive. Example: abc, ABC.(both are different Variables)
+
+
+====================================
+Operator
+--------
+Arithmetic operators : +,-,*,/,Modulo(%), Exponential(**)
+
+Exponential(**) -> 
+let a = 2;
+let b = 5;
+let abc = a**b;  // 2x2x2x2x2 = 32
+document.write(abc);
+
+-----
+Asssignment operators: =,+=,-=,*=,/=,%=, Exponential equal to(**=)
+
+Exponential equal to(**=)-> 
+let abc = 2;
+abc **= 5; // 2x2x2x2x2 = 32
+document.write(abc);
+
+------
+Increment / Decrement operators : ++,--
+
+------
+Comparison operators: ==,!=,<,>,<=,>=
+
+------
+Logical operators: &&,||,!
+
+------
+typeof operators
+* It tells us the operand type.
+let abc =2;
+document.write(typeof abc);
+op-> number 
+====================================
+
+Conditional Statements and Loops in javascript
+if
+if else
+if-elseif-else
+switch
+
+====================================
+Types of Loops
+
+> while loop
+> do while loop
+> for
+> for-of-loop
+    Example 
+    const arr = [2,4,6,8,10];
+    for (let element of arr)
+    {
+         document.write(element);
+    }
+
+> for-in-loop 
+    * It is used for javascript objects.
+    Example: 
+
+> foreach
+    * It is used as a loop but not a loop.
+    * It is a function.
+    * It is used to iterate through arrays.
+
+    Example:
+    const arr = [2,4,6,8,10];
+    arr.forEach(function(element) {
+        document.write(element+"");
+    })
+
+============================================
+fuction
+  -> It is a block of code that performs a specific task.
+  -> It takes data to perform tasks called 'function arguments'
+  -> It can take any number of arguments.
+  -> It retruns only one value at a time.
+---
+1. General fucntions
+2. Anonymous fucnitons 
+3. Arrow fucnction
+---
+Example: 
+  function get_max(a,b) { 
+    if(a>b)
+    {
+        return a;
+    }
+    else
+    {
+        return b;
+    }
+}
+
+let max = get_max(5,10); //function calling
+document.write(max); //as function arguments
+
+-----
+Q. Can we assign default values to the function argruments?
+ans--> YES! 
+-----
+Call by value/reference
+  -> It allows us to pass arguments to a function.
+  -> In JS, we can pass arguments to a function using only call by value.
+
+
+Summary 
+  -> For arrays and objects. if we change the argument variable itself, the original variable remains unaffected.
+  -> If we change the internals of the argument variable, the original variable also gets changed.
+  -> The concept of call by value is the same for objects as well.
+
+-------------------
+Anonumous fucntions
+-------------------
+  -> These are the functions that do not have any name.
+  Example: 
+  -> They are mainly used in objects.
+
+
+
+    let multiply = function (x,y) {
+        let p = x*y;
+        return p;
+    };
+    let  r = multiply(2,4);
+    document.write(r);
+----
+ 
+Function as arguments
+  -> Function can be passed as an argument. 
+  -> The function passed to a function is called 'callback'.
+
+Example: 
+//Anonymous functions 
+let multiply = function (x,y)
+{
+    let p = x*y;
+    return p;
+};
+
+//Anonymous function
+let add = function(x,y){
+    let s = x+y;
+    return s;
+};
+
+let a=5, b=20;
+
+//General fuction
+function action(x,y,z){
+    let r = z (x,y);
+    return r;
+};
+
+let r= action(a, b, add);
+document.write(r);
+// OUTPUT -> 25
+
+--------------
+Arrow function
+--------------
+
+let multiply = (x,y) => {
+    let p = x*y;
+    retrun p;
+}
+
+Arrow function depends on two conditions:
+1) It can have alphanumeric character or hyphen or underscore.
+        let multiply = (x,y) => {
+            return x*y;
+        }
+
+     --> let multiply = (x,y) => x*y;
+
+2) Function has only one argument.
+     --> let multiply = x => x*y;
+upto -> M6T4V2 completed
+==================================================
+next video -> M6T5V1
+
+
+
