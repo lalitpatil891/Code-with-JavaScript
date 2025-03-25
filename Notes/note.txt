@@ -1,4 +1,3 @@
-
 JS is a loosely typed language
 let abc;
 abc = "Hello World!";

@@ -1,4 +1,4 @@
-function Car(make, model, year) {
+function Car(make, model, year) {  //fuction_constructor
     this.make = make;
     this.model = model;
     this.year =  year;
