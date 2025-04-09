@@ -1,0 +1,40 @@
+<!-- example on timer functions -->
+<!DOCTYPE html>
+<html lang="en">  
+ <head>
+	<meta charset="UTF-8">
+ </head>
+ <body>
+	<h2>demo on digital clock and changing background color</h2>
+	<div style="display:flex;justify-content:space-between;">
+		<h2 id="d">Date</h2>
+		<h2 id="t">Time</h2>
+	</div>
+	<script>
+		//displaying date
+		document.querySelector("#d").innerText=new Date().toLocaleDateString();
+
+		//displaying digital time
+		setInterval( function(){ 
+						const dt=new Date();
+						document.querySelector("#t").innerText=dt.toLocaleTimeString();
+					} , "1000");
+	</script>
+	<br>
+
+	<button id="start"> &nbsp; Start  &nbsp; </button> &nbsp; &nbsp; &nbsp; 
+	<button id="stop"> &nbsp; Stop &nbsp;&nbsp; </button>
+	<script>
+		let t;
+		//changing color
+		document.querySelector("#start").onclick=()=>{
+			t=setInterval( function() {
+				const c='#'+parseInt(Math.random()*1000000);
+				document.body.style.background=c;
+			}, "500");
+		}
+		//stopping color changing
+		document.querySelector("#stop").onclick=()=>window.clearInterval(t);
+	</script>
+ </body>
+</html>

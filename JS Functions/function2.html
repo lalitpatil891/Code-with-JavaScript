@@ -1,0 +1,48 @@
+<!-- example on JS functions -->
+<!DOCTYPE html>
+<html lang="en">     
+ <head>
+    <title>Functions</title>
+	<script src="exprfuns.js"></script>
+ </head>
+ <body>
+	<h3>demo on functional expr</h3>
+	<script>
+		document.write(`${add}<br>`);
+		//calling fun
+		let res = add(10,20);
+		document.write(`${res}<br>`);
+		document.write(`${power(2,8)}<br>`);
+
+		const eles=[200,9,100,40,60];
+		
+		//callback (extending functionality)
+		eles.forEach( 
+						function(e) { 
+						   console.log('EF');
+							document.write(`${e}<br>`); 
+						} 
+					); //call back fun
+								
+    
+		let tot=0;
+		//callback (extending functionality)
+		eles.forEach( function(e){
+						tot+=e;
+					 } );
+		document.write(`<br>${tot}<br>`);
+		
+		//sorting in asc order	
+		eles.sort( 
+					function(i,j) { 
+						return i-j; 
+					} 
+				 );  //call back fun
+		document.write(`Sorted Array	=> ${eles}<br>`);
+		
+		//sorting in desc order	
+		eles.sort( function(i,j) { return j-i; } ); //call back fun
+		document.write(`Sorted Array	=> ${eles}<br>`);			
+	</script>
+ </body>
+</html>

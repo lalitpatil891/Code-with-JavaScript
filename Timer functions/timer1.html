@@ -1,0 +1,34 @@
+<!-- timer functions
+setTimeout ==> delay fun  
+							 it performs the given task after sometime
+							 it executes the task only once (1time)
+				Syn:	-		window.setTimeout(task, "timer") 
+
+setInterval ==> delay fun,
+							 it performs the given task after sometime
+							 it executes the task repeat
+				Syn:	-		window.setInterval(task, "timer") 
+
+clearInterval ==> to remove/to stop interval
+				Syn:		window.clearInterval(timer-index)
+
+clearTimeout ==> to remove/to stop timer
+				Syn:		window.clearTimeout(timer-index)
+-->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <title>JS</title>
+ </head>
+ <body>
+	<h3>demo on  timer functions</h3>
+	<script>
+		//it executes the given task after 4seconds but 1time only
+		window.setTimeout( function(){ alert("msg from timeout")}, "5000");  
+
+		//it executes the given task after 4seconds but repeat
+		//window.setInterval( function(){ alert("msg from timeout")}, "5000");
+	</script>
+ </body>
+</html>

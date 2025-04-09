@@ -1,0 +1,21 @@
+<!-- example on constructor functions -->
+<Html>     
+<head>
+  <title>constructor</title>
+	<script src="Book.js"></script>
+</head>
+<body>
+	<h3>demo on  non-parameter constructor</h2>
+	<script>
+	  //const book =Book();  <==	its invalid operation
+	  const firstBook = new Book();  //calling constructor
+	  const secondBook = new Book(); 
+	  const thirdBook = new Book(); 
+
+	  document.write(`${firstBook.getBook()}`);           
+	  document.write(`${secondBook.getBook()}`);           
+	  document.write(`${new Book("CSS", 2010, "W3C", 300).getBook()}`);;
+	</script>
+</body>
+</html>
+

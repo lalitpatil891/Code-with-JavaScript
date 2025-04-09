@@ -1,0 +1,26 @@
+<!-- example on JS Arrays -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<meta charset="UTF-8">
+  </head>
+  <body>
+	<h2>demo on unshift & shift methods</h2>
+	<script>
+	  const eles=[];
+	  eles.unshift(10);
+	  eles.unshift(20);
+	  eles.unshift(30);
+	  let c=eles.unshift(40);
+	  document.write(`Eles	${eles}<br>`);
+	  document.write(`C	${c}<br>`);
+	  
+	  let x=eles.shift()
+	  document.write(`1st shf	${x}<br>`);
+	  document.write(`2nd shf	${eles.shift()}<br>`);
+	  
+	  eles.unshift(303,202,101);
+	  document.write(`Eles	${eles}<br>`);   
+	</script>	
+  </body>
+</html>

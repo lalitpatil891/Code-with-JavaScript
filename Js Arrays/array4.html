@@ -1,0 +1,34 @@
+<!-- example on JS Arrays -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+	<h3>finding min & max elements</h3>
+	<script>
+	  const eles=[];	
+	  
+	  let n=+prompt("enter no of values");
+	  
+	  for(let i=0; i<n; i++)
+	    eles[i]=+prompt(`enter a(${i}) value`);
+	
+	  let min=eles[0]; //let assume
+	  let max=eles[0]; //let assume
+	  
+	  for(let i=0; i<eles.length; ++i)
+	  {
+		if(eles[i]<min)
+		  min=eles[i];
+		  
+		if(eles[i]>max)
+		  max=eles[i];		
+	  }
+		
+	  document.write(`Elements	${eles}<br>`);
+	  document.write(`Min Ele	${min}<br>`);
+	  document.write(`Max Ele	${max}<br>`);
+	</script>  
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!-- example on DOM -->
+<!DOCTYPE html>   
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>DOM</title>
+ </head> 
+ <body>
+   <h2>demo on removing ele & adding ele</h2>
+   <div id="div1">
+	<h1>Red Apple</h1>
+	<h3>Yellow Mango</h3>
+	<p>Black Grape</p>
+	<button onclick="document.querySelector('h1').remove()">delete ele</button>
+   </div>
+	<hr>
+	<div id="div2">
+	  <button id="bt">add element</button>
+	</div>
+   <script>						 
+	document.querySelector("#bt").onclick=function(){
+	  const p=document.createElement("p"); //<p></p>
+	  p.innerText="For current <b>price</b> information, please visit our web site";
+		//<p>For current <b>price</b> information, please visit our web site"</p>
+	  p.id="para1";   //<p id="para1">.....</p>
+	  p.style.color="blue";
+	  p.style.fontSize="20px";
+			 //<p id="para1" style="color:red; font-size:20px;">.....</p>
+
+	  //document.body.appendChild(p);
+	  document.querySelector("#div1").appendChild(p);
+	}
+   </script>
+ </body>
+</html>			

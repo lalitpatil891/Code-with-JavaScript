@@ -1,0 +1,33 @@
+<!-- example on JS Arrays -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+	<h3>demo on arrays</h3>
+	<script>
+	  //different types of elements
+	  let data=['siva',43,true,5.10,new Date()];
+	  document.write(`data => ${data}<br>`);
+	  
+	  //constant array
+	  const a=[10,20,30];
+	  document.write(`A	${a}<br>`);
+	  a[1]=22;
+	  a[3]=44;
+	  document.write(`A	${a}<br>`);
+	  
+	  //dynamic array
+	  const b=[11,22,33,44,55,66,77,88,99];
+	  document.write(`B	${b}<br>`);	  
+	  b.length=5;  //reduces size
+	  document.write(`B	${b}<br>`);	  	  
+	  b.length=7;  //incre size
+	  b[5]=101;
+	  b[6]=202;
+	  document.write(`B	${b}<br>`);	  	  
+	  //b.length=0;
+	</script>  
+  </body>
+</html>

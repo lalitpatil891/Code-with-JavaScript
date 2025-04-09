@@ -1,0 +1,27 @@
+<!-- example on JS Arrays -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<meta charset="UTF-8">
+  </head>
+  <body>
+	<h2>demo on splice method</h2>
+	<script>
+	  const eles=[10,20,30,40,50,60,70,80,90];
+	  document.write(`Eles	${eles}<br>`);
+	  
+	  //deletion	splice(st-ind, noof eles)
+	  let x=eles.splice(3,1); 
+	  //eles.splice(6,2); 
+	  document.write(`aft del	${eles}<br>`);	 
+	 
+	  //updation     splice(st-ind, noof eles, new eles)
+	  let y=eles.splice(4,2,101,202);
+	  document.write(`aft upd	${eles}<br>`);	 	  
+	  
+	  //insertion	 splice(st-ind, 0, new eles)
+	  eles.splice(3,0, 111,222,333);
+	  document.write(`aft ins	${eles}<br>`);	 	    
+	</script>	
+  </body>
+</html>

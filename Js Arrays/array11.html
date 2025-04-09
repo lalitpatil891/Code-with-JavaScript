@@ -1,0 +1,48 @@
+<!-- example on JS Arrays -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<meta charset="UTF-8">
+  </head>
+  <body>
+	<h2>demo on includes, indexOf, lastIndexOf, reverse, sort & join methods</h2>
+	<script>
+	  const eles=[10,20,30,40,50,30,60,70,80,30,90,30];
+	  let str="You should have received";
+	  document.write(`Eles =>	${eles}<br>`);
+	  document.write(`Str =>	${str}<br>`);
+	  
+	  //includes()
+	  document.write(`20 incl? ${eles.includes(20)}<br>`);
+	  document.write(`55 incl? ${eles.includes(55)}<br>`);	  
+	  document.write(`have incl?  ${str.includes('have')}<br>`);
+	  document.write(`${[11,22,33].includes(22)}<br>`);
+	  document.write(`${"apple".includes("p")}<br>`);	  
+	  
+	  //indexOf()
+      document.write(`30@	${eles.indexOf(30)}<br>`);
+	  document.write(`66@	${eles.indexOf(66)}<br>`);
+	  document.write(`30@	${eles.indexOf(30,4)}<br>`);
+	  document.write(`${str.indexOf('e')}<br>`);
+	  
+	  //lastIndexOf()
+      document.write(`30@	${eles.lastIndexOf(30)}<br>`);document.write(`${str.lastIndexOf('e')}<br>`);	  
+	  
+	  //reverse()
+	  eles.reverse();
+	  document.write(`rev	${eles}<br>`);
+	  
+	  //sort()
+	  eles.sort();
+	  document.write(`sort	${eles}<br>`);	  
+	  
+	  const names=['rama','ramana','Ramakrishna','ramarama','raman','Ramarao','ramacharan'];
+	  document.write(`names	=>	${names}<br>`);
+	  names.sort();
+	  document.write(`sorted =>	${names}<br>`);
+	  
+	  //join()
+	  document.write(`${eles.join('&#128333;')}<br>`);
+	</script>	
+  </body>
+</html>

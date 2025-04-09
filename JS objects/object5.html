@@ -1,0 +1,43 @@
+<!-- example on JS Objects -->
+<!DOCTYPE html>
+<html lang="en">  
+  <head>
+    <meta charset="UTF-8">
+    <title>Object</title>
+  </head>
+  <body>
+	<h3>demo on array of objects</h3>	
+	<script>
+	 /* const emp1 = {id, name, sal}
+	  const emp2 = {id, name, sal}	  
+	  const emp3 = {id, name, sal}	*/
+
+	  const emps = [
+										{id:11, name:"ram", sal:35000},
+										{id:22, name:"sam", sal:45000},
+										{id:33, name:"rahim", sal:39000},
+								   ];
+
+		for(let e of emps)
+			document.write(`${e.id} &nbsp; ${e.name} &nbsp;  ${e.sal} <br>`);
+			//OR		
+		emps.forEach( function(e){
+							document.write(`${e.id} &nbsp; ${e.name} &nbsp;  ${e.sal} <br>`);
+						} );
+			//OR		
+			document.write("<table border>");
+			document.write("<tr>	<th>ID</th> <th>Name</th> <th>Salary</th> </tr>");
+			for(let i in emps) {
+				document.write(`<tr>
+													<td>${emps[i].id}</td>
+													<td>${emps[i].name}</td>										
+													<td>${emps[i].sal}</td>
+													</tr>`);
+			}
+			document.write("</table>");
+	 
+		//OR	console.table(emps);
+	</script> 
+		</script>
+   </body>
+</html>

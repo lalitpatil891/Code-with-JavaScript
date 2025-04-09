@@ -1,0 +1,72 @@
+<!-- Arrow functions (since JS6)
+1. No Parameter with 1step
+	Syn:		() => statement		    
+				refvar = () => statement
+
+2. No Parameter with no.of steps
+	Syn:		() => { statements }
+
+3. 1 Parameter with 1 step
+	Syn:		param => statement
+
+4. 1 Parameter with no.of steps
+	Syn:		param => {statements }
+
+5. No.of Parameter with 1step
+	Syn:		(params) => statement
+
+6. No.of Parameter with no.of steps
+	Syn:		(params) => { statements }
+
+Note: > without { } implicit return 
+		  > with { } explicit return
+		  > 1step no need { }
+		  > 1param no need ()
+
+calling:	    refvar		===> it displays AF code on webpage	
+				refvar()	    ===> it execute AF then displaying output	  -->	
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <title>Functions</title>
+	<script src="arrowfuns.js"></script>
+ </head>
+ <body>
+	<h3>demo on arrow functions</h3>
+	<script>
+		document.write(`${myfun}<br>`);
+		myfun();		//calling fun
+		let res = add(10,20);
+		document.write(`${res}<br>`);
+		document.write(`${power(2,6)}<br>`);
+		document.write(`${natsum(10)}<br>`);
+	
+		const eles=[200,9,100,40,60];
+		
+		//callback (extending functionality)
+		eles.forEach( 
+						(e)=> { 
+						   console.log('EF');
+						   document.write(`${e}<br>`); 
+						} 
+					); 
+								
+   
+		let tot=0;
+		//callback (extending functionality)
+		eles.forEach( e=>tot+=e );
+		document.write(`<br>${tot}<br>`);
+		
+		//sorting in asc order	
+		eles.sort(
+					(i, j) => i-j
+				  );  //call back fun
+		document.write(`Sorted Array	=> ${eles}<br>`);			
+		//sorting in desc order	
+		eles.sort( 
+					(i,j)=>j-i 
+				 ); //call back fun
+		document.write(`Sorted Array	=> ${eles}<br>`);	
+	</script>
+ </body>
+</html>  

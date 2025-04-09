@@ -1,0 +1,25 @@
+<!-- example on JS Arrays -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<meta charset="UTF-8">
+  </head>
+  <body>
+	<h2>demo on spread operator </h2>
+	<script>
+	  const a=[10,20,30];
+	  //let b=a;	it copies ref
+	  
+	  const b=[...a];  //array copying
+	  document.write(`A	${a}<br>`);
+	  document.write(`B	${b}<br>`);
+	  
+	  const ft=['html','css','js','bs'];
+	  const bt=['servlet','php','django','asp','node'];
+	  const db=['oracle','mongo','mysql'];
+	  
+	  const fsd=[...ft,...bt,...db];  //array merging
+	  document.write(`fsd	${fsd}<br>`);   	
+	</script>	
+  </body>
+</html>

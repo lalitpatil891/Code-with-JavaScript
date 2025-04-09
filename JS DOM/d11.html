@@ -1,0 +1,57 @@
+<!-- example on DOM -->   
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>DOM</title>
+ </head>
+ <body>
+   <h2>demo on adding product</h2>
+	<div id="div1">
+		<button id="addBt"> Add to Cart </button>
+	</div>
+	<script>
+		document.querySelector("#addBt").onclick=function() {
+				//creating product img
+				const pimg=document.createElement("img");
+				pimg.src="s23.jpg";
+				pimg.style.width="80%";
+				pimg.style.borderRadius="15px";
+
+				//creating product name
+				const pn=document.createElement("h3");
+				pn.innerText="Samsung Galaxy S23";
+				pn.style.color="blue";
+ 
+				//creating product price info
+				const pp=document.createElement("p");
+				pp.innerHTML="new price <strong>&#8377;60000</strong> <br>M.R.P<strike>&#8377;80000</strike> <br> <em>25%</em> Discount";
+
+				//creating delete button
+				const bt=document.createElement("button");
+				bt.innerText="Delete Product";
+				bt.onclick=()=> document.querySelector("#product").remove();
+
+				//creating div (container)
+				const div=document.createElement("div");
+				div.id="product";
+				div.style.width="200px";
+				div.style.borderRadius="15px";
+				div.style.boxShadow="2px 2px 10px black";
+				div.style.padding="10px";
+				div.style.textAlign="center";
+				div.style.display="inline-block";
+				div.style.margin="10px";
+
+				//adding items to div
+				div.appendChild(pimg);
+				div.appendChild(pn);
+				div.appendChild(pp);
+				div.appendChild(bt);
+
+				//adding div to page
+				document.body.appendChild(div);
+		}
+   </script>
+ </body>
+</html>			

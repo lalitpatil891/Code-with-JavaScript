@@ -1,0 +1,31 @@
+<!-- example on DOM -->
+<!DOCTYPE html>  
+<html lang="en"> 
+ <head>
+  <meta charset="UTF-8">
+  <title>DOM</title>
+ </head>
+ <body>
+	<h3>demo on element object properties (changing html settings)</h3>
+	<img src="https://source.unsplash.com/300x300?flower">
+	<br>
+	<input type="text" id="una" size="50">
+	<br>
+	<script>
+		//changing img settings
+		const img = document.querySelector("img");
+		document.write(`${img.src}<br>`);	 //or img.getAttribute("src");
+		img.title="some random flower";	
+			//or  img.setAttribute("title", "some random flower");
+
+		//changing input settings
+	  const una = document.querySelector("#una");
+	  document.write(`${una.type}<br>`);	//or		una.getAttribute("type");
+	  una.placeholder="enter username";	
+							//or    una.settAttribute("placeholder", "enter unsername");
+	  una.maxLength=10;	//or    una.settAttribute("maxlength",10)
+
+	  una.removeAttribute("size");
+	</script>
+ </body>
+</html>
