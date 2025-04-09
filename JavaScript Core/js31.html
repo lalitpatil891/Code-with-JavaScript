@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+	<h3>printing multiplication table</h3>
+	<input type="text" id="tn" placeholder="enter table number"> 
+	<button onclick="printTable()">Print Table</button>
+	<br>
+	<output id="op"></output>
+	
+	<script>
+	  function printTable()
+	  {
+	    let n,res;
+		n=tn.value;
+		op.innerHTML="";
+		if(isNaN(n)===false)
+		{
+			for(let i=1; i<=20; i++)
+			{
+			  res=n*i;
+			  //document.write(n+'*'+i+'='+res+'<br>');
+			  //op.value+=n+'*'+i+'='+res+'<br>';
+			  op.innerHTML+=n+'*'+i+'='+res+'<br>';
+			}		
+		}else
+		  op.value='invalid table number';
+	  }
+	</script> 
+  </body>
+</html>
+

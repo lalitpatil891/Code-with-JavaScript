@@ -1,0 +1,36 @@
+<!-- example on Control Statement -->
+<h3>demo on switch </h3>
+<script>
+  //it sup all datatypes
+  let n;
+  n=10.50;
+  switch(n)
+  {
+	case 10.50: document.write('Ok<br>');
+			break;
+	default: document.write('No<br>');
+  }
+  
+  //it sup conditions
+  let i=25;
+  switch(i>=0)
+  {
+	case true: document.write('+ve<br>');
+				break;
+	case false: document.write('-ve<br>');
+  }
+  
+  //we can use variable with in "case"
+  let x=10, y=20;
+  let res=10;
+  switch(res)
+  {
+	case x:	document.write('X');
+			break;
+	case y: document.write('Y');
+			break;
+	default: document.write('No');	
+  }
+</script>
+
+

@@ -1,0 +1,34 @@
+<!-- designing simple interest calculator -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+	<link rel="stylesheet" href="interest.css">
+  </head>
+  <body>
+	<div class="container">
+	  <h2>Interest Calc</h2>
+	  <p>
+	    <label for="pamt">Principal Amount</label> <br>
+		<input type="text" id="pamt" autofocus>
+		<span>&#8377;</span>
+	  </p>
+	  <P>
+		<label for="time">Time</label> <br>
+		<input type="text" id="time"> <span>Year(s)</span>
+	  </p>
+	  <p>
+		<label for="roi">Rate of Iterest</label> <br>
+		<input type="text" id="roi"> <span>%</span>
+	  </p>
+	  <p>
+	    <button onclick="calcAmount()">Calc Interest</button>
+	  </p>
+	  <p>
+	    <output id="intAmt"></output> <br>
+		<output id="totAmt"></output>
+	  </p>	
+	</div>  
+	<script src="interest.js"></script>
+  <body>
+</html>

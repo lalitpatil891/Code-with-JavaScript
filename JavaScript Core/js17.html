@@ -1,0 +1,33 @@
+<!-- html with js implementation -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+	<h3>finding sum of 2 numbers</h3>
+	<label for="firstNum">enter first number</label><br>
+	<input type="text" id="firstNum"> <br>
+	<label for="secNum">enter second number</label><br>
+	<input type="text" id="secNum"> <br>
+	<button onclick="addition()">Addition</button> <br>
+					<!--calling-->
+	<output id="op"></output>
+	
+    <script>
+	  //function defination
+	  function addition()
+	  {
+	    let x,y,res;  //local vars
+		//data coll
+		x=firstNum.value;
+		y=secNum.value;
+		res=+x + +y;
+		//document.write('Sum is '+res);	OR
+		//alert("Sum is "+res);	OR
+		//console.log("Sum is "+res);  OR
+		op.value="Sum is "+res;
+	  }
+	</script> 
+  <body>
+</html>

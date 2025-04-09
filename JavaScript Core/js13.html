@@ -1,0 +1,64 @@
+<!-- example on JS -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <title>Js13</title>
+ </head>
+ <body>
+	<h3>demo on Operators</h3>
+	<script>
+		let x=25, y=8;
+		//Arithmetic		+		-		*		/		%		**
+		document.write(x+y, "<br>")
+		document.write(x*2, "<br>")
+		document.write(x**2, "<br>")
+
+		//Relational	  >    <     >=     <=     ==    !=      ===     !==
+		document.write(x>=0, "<br>")
+		let z="8";
+		document.write( y==z, "<br>") //8=="8" ==> "8"=="8"
+		document.write( y===z, "<br>") //8==="8" 
+		document.write( y!=z, "<br>") //8!="8" ==> "8"!="8"
+		document.write( y!==z, "<br>") //8!=="8" 
+
+		//Logical   &&    ||		!
+		document.write(y>=1 && y<=10)
+		document.write(y==1 || y==8, "<bR>")
+
+		//Bitwise		&    |     ~     ^     >>     <<     >>>
+		z=100>>2;
+		document.write(z, "<bR>");
+		z=50<<5;
+		document.write(z, "<bR>");
+
+		//Assignment		=
+			//shorthand   +=	-=	/=	 >>=			<<=  ...
+		x+=40;		//x=x+40;
+		y*=20;		//y=y*20;
+		document.write(x,"<bR>", y, "<br>");
+
+		//Concate	 +
+		document.write("rama"+"rao"+"<br>")
+		document.write(100+"Apples<bR>")
+		document.write(20+true,"<br>")
+
+		/*Unary	
+			increment	  curval+1		++    post (var++)		pre (++var)
+			decrement		curval-1		--		  post	 (var--)		pre (--var)	*/
+		x++;			
+		document.write(x, "<bR>");
+		++x;
+		document.write(x, "<bR>");
+		y--;
+		document.write(y, "<bR>");
+		--y;
+		document.write(y, "<bR>");
+
+		//ternary	  ?: (Conditional ope)				
+		document.write( y%2===0 ? "Even number" : "Odd number" )
+	</script>   
+ </body>
+</html>
+
+ 

@@ -1,0 +1,27 @@
+<!-- example on JS -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <title>Js9</title>
+ </head>
+ <body>
+	<h3>demo on re-defination &  hoisting </h3>
+	<script>
+		//re-defination 
+		var a=100;
+		document.write(a+" "+typeof a+"<bR>");
+		var a="apple";	//re declaration
+		document.write(a+" "+typeof a+"<bR>");
+		//let a=true;		error, not sup
+		var a=true;   //re declaration
+		document.write(a+" "+typeof a+"<bR>");
+		name="ram";
+		document.write("Hi "+name+"<br>");
+		age=40;
+		document.write(age+" Year(s) Older");
+		//let name, age;	error, not sup
+		var name, age;	//hoisting, these are shifted to top of script @time of translation
+	</script>
+ </body>
+</html>
