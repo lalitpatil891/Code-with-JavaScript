@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Validation</title>
+
+    <script>
+
+        function validationfun() {
+
+            var str = pass.value.trim();
+            var ac = 0, dc = 0; sc = 0;
+
+
+            if (str.length > 6) {
+                for (let i = 0; i < str.length; i++) {
+                    ch = str.charAt(i);
+
+                    if ((ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z')) {
+                        ac++;
+                    }
+                    else if (ch >= '0' && ch <= '9') {
+                        dc++;
+                    }
+                    else if (ch == '@' || ch == '#' || ch == '$' || ch == '&') {
+                        sc++;
+                    }
+                }
+
+                if (ac == 0 || dc == 0 || sc == 0) {
+                    msg.value = "plz choose strong pw, try mix of alpha, digit and special char($,@,&,#)";
+                }
+                else {
+                    msg.value = "password OK";
+                }
+            }
+            else {
+                msg.value = "Password length at least 6chars minimum";
+            }
+
+
+        }
+
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-size: large;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        body {
+            width: 100%;
+            height: 650px ;
+        }
+
+        .main-container {
+            width: 99%;
+            height: 650px;
+            display: flex;
+            justify-content: center;
+            align-items: center ;
+        }
+
+        .flex-box-signup {
+            margin: 20px;
+            width: 450px;
+            height: fit-content;
+            border: 1px solid lightgray;
+            padding: 20px;
+            border-radius: 8px ;
+
+
+        }
+
+        input {
+            width: 95%;
+        
+            padding: 10px 10px;
+            margin-bottom: 8px;
+            border-radius: 2px;
+            border: 1px solid lightgray;
+        }
+        
+        input[type=submit] {
+            padding: 10px 15px;
+            border: none;
+
+            text-align: center;
+        }
+
+        label {
+            font-size: large;
+        
+        }
+
+        output {
+            
+            color: red;
+            font-size: medium;
+
+        }
+
+        p {
+            margin: 10px 0px;
+        }
+
+        h4 {
+            text-align: center;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <br>
+    <h4>Password validation javascript program</h4>
+
+    <div class="main-container">
+    
+        <div class="flex-box-signup">
+         
+            <label for="mailid">E-mail Id</label><br>
+            <input type="text" name="mailid" id="mailid"><br>
+
+            <label for="password">Password</label><br>
+            <input type="text" name="pass" id="pass"><br>
+
+           <p> <output id="msg"></output></p><br>
+            <input type="submit" value="SingUp" onclick="validationfun()">
+        </div>
+    </div>
+</body>
+
+</html>
