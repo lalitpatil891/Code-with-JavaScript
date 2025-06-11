@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title> Employee Salary Increment Example</title>
+</head>
+
+<body>
+
+  <h3> Employee Salary Increment Example</h3>
+  <p>7. Write a class Employee that stores name, position, and salary. Add a method to increase salary by a given
+    percentage. Create two objects and update their salary.</p>
+
+  <script type="text/javascript">
+    class Employee {
+      constructor(name, position, salary) {
+        this.name = name;
+        this.position = position;
+        this.salary = salary;
+      }
+
+      increaseSalary(percent) {
+        this.salary += this.salary * (percent / 100);
+        console.log(`${this.name}'s new salary: ${this.salary}`);
+        document.writeln(`${this.name}'s new salary: ${this.salary}<br>`);
+      }
+    }
+
+    const emp1 = new Employee('Lalit', 'Developer', 30000);
+    const emp2 = new Employee('Rahul', 'Designer', 25000);
+
+    emp1.increaseSalary(10); // 10% increase
+    emp2.increaseSalary(15); // 15% increase
+
+  </script>
+</body>
+
+</html>
