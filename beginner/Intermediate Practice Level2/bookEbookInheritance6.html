@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Book & Ebook Inheritance Example</title>
+</head>
+
+<body>
+
+    <h3>Book & Ebook Inheritance Example</h3>
+    <p>6. Create a class Book with properties title, author. Then create another class Ebook that extends Book and adds
+        a new property fileSize. Display details of the Ebook.</p>
+
+    <script type="text/javascript">
+        class Book {
+            constructor(title, author) {
+                this.title = title;
+                this.author = author;
+            }
+
+            display() {
+                console.log(`Title: ${this.title}, Author: ${this.author}`);
+            }
+        }
+
+        class Ebook extends Book {
+            constructor(title, author, fileSize) {
+                super(title, author);
+                this.fileSize = fileSize;
+            }
+
+            display() {
+                super.display();
+                console.log(`File Size: ${this.fileSize} MB`);
+            }
+        }
+
+        const ebook1 = new Ebook('JavaScript Guide', 'Lalit Patil', 5);
+        ebook1.display();
+
+    </script>
+
+</body>
+
+</html>
