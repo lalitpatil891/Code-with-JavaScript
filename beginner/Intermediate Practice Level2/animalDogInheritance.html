@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Animal & Dog Inheritance Example</title>
+</head>
+
+<body>
+    <h3>Animal & Dog Inheritance Example</h3>
+    <p>4. Create a class Animal with a method makeSound(). Then create a class Dog that extends Animal and overrides
+        makeSound() to print "Woof!".</p>
+
+    <script type="text/javascript">
+
+        class Animal {
+            makeSound() {
+                console.log('Some generic sound');
+            }
+        }
+
+        class Dog extends Animal {
+            makeSound() {
+                console.log('Woof!');
+            }
+        }
+
+        const dog1 = new Dog();
+        dog1.makeSound();
+    </script>
+</body>
+
+</html>
