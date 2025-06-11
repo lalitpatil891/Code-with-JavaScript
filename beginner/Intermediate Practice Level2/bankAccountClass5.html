@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>5. BankAccount Class Example</title>
+</head>
+
+<body>
+
+    <h3>5. BankAccount Class Example</h3>
+    <p>5. Create a class BankAccount with properties: accountNumber, balance. Add methods deposit(amount) and
+        withdraw(amount) to update the balance. Print the balance after every transaction.</p>
+
+    <script type="text/javascript">
+
+        class BankAccount {
+            constructor(accountNumber, balance) {
+                this.accountNumber = accountNumber;
+                this.balance = balance;
+            }
+
+            deposit(amount) {
+                this.balance += amount;
+                console.log(`Deposited: ${amount}. New Balance: ${this.balance}`);
+                document.writeln(`Deposited: ${amount}. New Balance: ${this.balance} <br>`);
+            }
+ss
+            withdraw(amount) {
+                if (amount > this.balance) {
+                    console.log(`Insufficient Balance`);
+                    document.writeln(`Insufficient Balance<br>`);
+                }
+                else {
+                    this.balance -= amount;
+                }
+                console.log(`Withdrawn: ${amount}. New Balance: ${this.balance}`);
+                document.writeln(`Withdrawn: ${amount}. New Balance: ${this.balance}<br>`);
+            }
+        }
+
+        const account1 = new BankAccount('12345', 1000);
+        account1.deposit(500);
+        account1.withdraw(300);
+        account1.withdraw(1500);
+
+    </script>
+
+</body>
+
+</html>
