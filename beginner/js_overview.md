@@ -1,7 +1,8 @@
 # JavaScript Overview
 
 ## What is JavaScript?
-JavaScript (JS) is a programming language that lets developers create interactive web pages. It is a core technology of the World Wide Web.
+JavaScript (JS) is a programming language that lets developers create interactive web pages. 
+It is a core technology of the World Wide Web.
 
 ## What Can JavaScript Do?
 - Refresh social media feeds
