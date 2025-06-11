@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>2. Rectangle Class Example</title>
+  </head>
+  <body>
+        <h3>2. Create a class called Rectangle with properties: width and height. Add a method calculateArea() that returns the area of the rectangle.</h3>
+
+        <script type="text/javascript">
+
+          class Rectangle {
+            constructor(width, height) {
+              this.width = width;
+              this.height = height;
+            }
+
+            calculateArea() {
+              return this.width * this.height;
+            }
+          }
+
+          const rect1 = new Rectangle(5,10);
+          document.writeln('Width: '+rect1.width+'<br>');
+          document.writeln('Height:'+rect1.height+'<br>');
+          console.log('Area:' , rect1.calculateArea());
+          document.writeln('Area: '+ rect1.calculateArea());
+
+        </script>
+  </body>
+</html>>
