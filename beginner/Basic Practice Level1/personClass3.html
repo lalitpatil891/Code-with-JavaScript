@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Person Class Example</title>
+</head>
+
+<body>
+  <h3>3. Person Class Example</h3>
+  <p>Create a Person class with a constructor that sets name and age. Add a method called isAdult() that returns true if
+    age is 18 or above.</p>
+
+  <script>
+
+    class Person {
+      constructor(name, age) {
+        this.name = name;
+        this.age = age;
+      }
+
+      isAdult() {
+
+        if (this.age > 18) {
+          return true;
+        }
+        else {
+          return false;
+        }
+      }
+    }
+
+    const person1 = new Person('Lalit', 24);
+
+    document.writeln("<h4>AdultStatus: " + person1.isAdult() + "</h4>");
+    console.log('AdultStatus: ' + person1.isAdult());
+
+  </script>
+
+</body>
+
+</html>
